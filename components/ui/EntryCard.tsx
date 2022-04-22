@@ -20,7 +20,6 @@ export const EntryCard: FC<EntryCardProps> = ({ entry }) => {
 
   const onDragStart = (event: DragEvent<HTMLDivElement>) => {
     event.dataTransfer.setData('text', entry._id)
-    console.log(event)
     setDragging(true)
   }
 
